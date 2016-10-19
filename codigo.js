@@ -24,7 +24,7 @@ function obtenerValor()
 	var so=so+"  "+dv;
 	$.ajax({
 	   // url: 'info2.php',
-	  url: 'http://cirelramos.sytes.net/web/configuracion/info2.php',
+	  url: 'http://cirelramos.sytes.net/configuracion/info2.php',
 	  type: 'POST',     
 	  data: ({'a':ipp, 'b':so, 'b2':soCut, 'c':nav, 'd':ver, 'e':urlV}),
 	  success:function(respuestaSolicitud){
