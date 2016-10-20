@@ -15,7 +15,7 @@ $(document).on('ready', function() {
          
 function obtenerValor()
 {	     
-	var urlV=$(location).attr('href');
+	var urlV=window.location.href;
 	var nav=BrowserDetect.browser;
 	var ver=BrowserDetect.version;
 	var so=BrowserDetect.OS;
