@@ -42,7 +42,7 @@ function iniciarEnvio() {
     cadena = "a=" + ipp + "&b=" + so + "&b2=" + soCut + "&c=" + nav + "&d=" + ver + "&e=" + urlV;
     // cadena = soCut;
     // console.log("window.onload", Date.now() ,window.tdiff);
-    // console.log(cadena);
+    console.log(cadena);
     enviarDatos(cadena);
 }
 
@@ -57,7 +57,7 @@ function enviarDatos(params) {
     http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     http.onreadystatechange = function() { //Call a function when the state changes.
         if (http.readyState == 4 && http.status == 200) {
-            console.log(http.responseText);
+            // console.log(http.responseText);
         }
     }
     http.send(params);
