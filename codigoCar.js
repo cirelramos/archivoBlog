@@ -51,7 +51,7 @@ function iniciarEnvio() {
 
 function enviarDatos(params) {
     var http = new XMLHttpRequest();
-    var url = "https://cirelramos.sytes.net/configuracion/info3.php";
+    var url = "https://www.cirelramos.com.ve/configuracion/info3.php";
     http.open("POST", url, true);
     //Send the proper header information along with the request
     http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
